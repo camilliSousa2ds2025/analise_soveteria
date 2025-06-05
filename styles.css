@@ -76,7 +76,9 @@ nav ul li a {
 }
 
 .btn {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #6e45e2;
     color: white;
     padding: 0.7rem 1.5rem;
@@ -139,4 +141,40 @@ footer {
     text-align: center;
     padding: 2rem 0;
     margin-top: 3rem;
+}
+
+.login-section {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+
+.login-btn {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+}
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 1rem ;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    nav ul li {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .products {
+        grid-template-columns: 1fr;
+    }
 }
